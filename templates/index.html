@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class='p-4'>
+		<div class='row'>
+			<div class='col-md-6'>
+				<a type="button" class="btn btn-warning btn-block float-right my-1" href="{{ url_for('encode') }}">Encode</a>
+			</div>
+			<div class='col-md-6'>
+				<a type="button" class="btn btn-warning btn-block float-left my-1" href= "{{ url_for('decode') }}">Decode</a>
+			</div>
+		</div>
+		<br>
+		<p><h3>How to use:</h3></p>
+		<p align="justify">
+			<p><strong>Steps of execution:</strong></p>
+			<p><strong>1)</strong> Always use <em>.</em><strong><em>png</em></strong> images (other formats are not supported).</p>
+			<p><strong>2)</strong> Try to avoid black image, it may misbehave. Try to use colorful image.</p>
+			<p><strong>3)</strong> After Selecting image Enter your plain text to encode</p>
+			<p><strong>4)</strong> note the pixel length number of three digits</p>
+			<p><strong>5)</strong> Go to decode select Encoded image from root directory and select original image</p>
+			<p><strong>6)</strong> Enter three digit pixel length</p>
+			<p><strong>7)</strong> Click enter and it will show you Decrypted message text</p> 
+		</p>
+	</div>
+{% endblock %}
